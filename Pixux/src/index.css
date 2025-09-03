@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-	background-color: #fdfaff;
+	background-color: #ffff;
 	font-family: "Poppins", sans-serif;
 	padding-bottom: 5rem;
 }
@@ -11,14 +11,14 @@ body {
 } */
 
 .type1 {
-	background-color: #5277f1;
+	background-color: blue;
 	color: #fff;
 }
 
 
 .type2 {
-	background-color: #fff;
-	color: #5277f1;
+	/* background-color: transparent; */
+	color: #2b2b2b;
 }
 
 li {

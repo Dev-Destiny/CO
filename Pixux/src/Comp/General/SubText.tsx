@@ -3,11 +3,7 @@ interface Props {
 }
 
 const SubText = ({ text }: Props) => {
-	return (
-		<div>
-			<p className="text-[#2b2b2b]" >{text}</p>
-		</div>
-	);
+	return <p className='text-[#2b2b2b]'>{text}</p>;
 };
 
 export default SubText;

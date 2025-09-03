@@ -16,8 +16,8 @@ function Navbar() {
 			</ul>
 			<div className='flex gap-2 items-center'>
 				{/* <img src="Search-icon.svg" alt="" /> */}
-				<Button text={"Sign in"} type={"type2"}/>
-				<Button text={"Get Started"} type={"type1"} />
+				<Button text={"Sign in"} type={"ghost"}/>
+				<Button text={"Get Started"} type={"primary"}/>
 				<Menu className='sm:hidden flex' />
 			</div>
 		</section>
