@@ -1,11 +1,13 @@
 interface Props {
-    text:string
+    title: string,
+    text: string
 }
 
-const Header = ({ text }:Props) => {
+const Header = ({ title, text }:Props) => {
   return (
-    <div>
-      <h1 className="poppins-regular text-[2.3rem] text-center">{ text }</h1>
+    <div className="text-center mb-10">
+      <h1 className="poppins-bold text-[2.3rem] text-center mb-3">{ title }</h1>
+      <p className="text-gray-500">{ text }</p>
     </div>
   )
 }
