@@ -1,9 +1,10 @@
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Pop from "../General/Pop";
+import Check from "../General/Check";
 
 const CTA = () => {
 	return (
-		<div className='text-white bg-blue-600 py-20 px-5'>
+		<div className='text-white bg-blue-600 py-20 px-10'>
 			<div className='max-w-[1000px] mx-auto text-center flex flex-col gap-5 items-center'>
 				<Pop
 					text='Limited Time: Free Access to Premium Features'
@@ -28,18 +29,9 @@ const CTA = () => {
 					</button>
 				</div>
 				<div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-x-10 gap-y-5 mb-20'>
-					<div className='flex gap-2 text-gray-200 justify-center'>
-						<CheckCircle color='lime' size={20} />
-						No credit card required
-					</div>
-					<div className='flex gap-2 text-gray-200 px-auto items-center justify-center'>
-						<CheckCircle color='lime' size={20} />
-						30-day free trial
-					</div>
-					<div className='flex gap-2 text-gray-200 items-center justify-center'>
-						<CheckCircle color='lime' size={20} />
-						Cancel anytime
-					</div>
+					<Check text="No credit card required"/>
+					<Check text="30-day free trial"/>
+					<Check text="Cancel Anytime"/>
 				</div>
 			</div>
 		</div>

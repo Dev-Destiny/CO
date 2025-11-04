@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const TestimonialSect = () => {
 	return (
-		<div className='bg-gray-50 py-20 px-5'>
+		<div className='bg-gray-50 py-20 px-10'>
 			<Header
 				title='What Our Students Say'
 				text="Join thousands of developers who've transformed their careers with CO's interactive learning platform."

@@ -4,7 +4,7 @@ import CourseCard from "./CourseCard";
 
 const CoursesSect = () => {
 	return (
-		<div className="py-20 px-5">
+		<div className="py-20 px-10">
 			<Header
 				title='Popular Programming Courses'
 				text={
@@ -45,7 +45,7 @@ const CoursesSect = () => {
 				/>
 			</div>
 			<div className="w-fit mx-auto mt-10">
-				<Button type="ghost" text="View all courses" stroke={true}/>
+				<Button type="ghost" stroke={true}>View all courses</Button>
 			</div>
 		</div>
 	);

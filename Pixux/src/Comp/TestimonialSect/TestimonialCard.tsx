@@ -6,12 +6,12 @@ interface Props {
 	message: string;
 	name: string;
 	position: string;
-	course: string;
+	course?: string;
 }
 
 const TestimonialCard = ({ stars, img, name, message, position, course }: Props) => {
 	return (
-		<div className="flex flex-col gap-5 bg-white p-5 rounded-2xl shadow-[0_0_3px_rgba(150,150,150,0.2)]">
+		<div className="flex flex-col gap-5 bg-white p-5 rounded-2xl shadow-[0_0_5px_rgba(100,100,100,0.2)]">
 			<div className="flex">
 				{[...Array(stars)].map((_, i) => (
 					<Star key={i} size={15} color="gold" fill="gold"/>

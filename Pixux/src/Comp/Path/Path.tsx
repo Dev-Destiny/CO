@@ -3,7 +3,7 @@ import Steps from "./Steps";
 
 const Path = () => {
 	return (
-		<div className='pt-20 px-5 mb-20'>
+		<div className='pt-20 px-10 mb-20'>
 			<Header
 				title='How CO Works'
 				text='Our proven 4-step learning methodology gets you from beginner to job-ready developer.'

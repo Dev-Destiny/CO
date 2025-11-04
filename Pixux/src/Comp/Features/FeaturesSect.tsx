@@ -4,7 +4,7 @@ import FeatureCard from "./FeatureCard";
 
 const FeaturesSect = () => {
 	return (
-		<div className='bg-blue-50 py-30 px-5'>
+		<div className='bg-blue-50 py-30 px-10'>
 			<Header
 				title='Why Choose Us?'
 				text="We've reimagined programming education to be more engaging, effective, and career-focused."

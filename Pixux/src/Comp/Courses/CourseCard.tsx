@@ -31,7 +31,7 @@ const CourseCard = ({ name, about, img, duration, students, ratings, level, pric
             <Info icon="Star" text={ratings}/>
     
         </div>
-        <Button size="full" type={"primary"} text={"View Course"}/>
+        <Button size="full" type={"primary"}>View Course</Button>
       </div>
     </div>
   )

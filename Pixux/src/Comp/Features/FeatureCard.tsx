@@ -8,7 +8,7 @@ interface Props {
 }
 
 
-const FeatureCard = ({  head, text, icon }: Props) => {
+function FeatureCard ({  head, text, icon }: Props) {
 	const IconComponent = LucideIcons[icon] as React.FC<React.SVGProps<SVGSVGElement>>;
 
 	return (

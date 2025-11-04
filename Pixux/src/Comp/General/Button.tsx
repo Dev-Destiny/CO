@@ -1,14 +1,13 @@
 import "react";
-// import { useState } from "react";
-interface Props {
-	text: string;
+
+type Props = {
+	children: React.ReactNode;
 	type: string;
 	size?: string;
 	stroke?: boolean
 }
 
-const Button = ({ text, type, size, stroke }: Props) => {
-
+const Button = ({ children, type, size, stroke }: Props) => {
 
 	const bgColor = type === "primary" ? "bg-blue-600" : "transparent";
 	const textColor = type === "primary" ? "text-white" : "text-black";
@@ -21,7 +20,7 @@ const Button = ({ text, type, size, stroke }: Props) => {
 			<button
 				className={`${width} ${hoverBg} ${border} transition-all duration-500 cursor-pointer px-5 py-2 rounded-[8px] text-[0.8rem] ${bgColor} ${textColor}`}
 			>
-				{text}
+				{children}
 			</button>
 		</div>
 	);

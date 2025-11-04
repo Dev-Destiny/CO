@@ -1,5 +1,5 @@
 import "react";
-import NewScreen from "./Comp/NewScreen";
+import NewScreen from "./Pages/Home";
 
 const App = () => {
 	return (
