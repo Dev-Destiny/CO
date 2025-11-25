@@ -1,3 +1,4 @@
+@import './base.css';
 @import "tailwindcss";
 
 body {
@@ -10,6 +11,9 @@ body {
 	margin-inline: auto;
 }
 
+.pad {
+	@apply px-5
+}
 
 
 li {
