@@ -2,17 +2,16 @@ import Button from "../../components/General/Button";
 import Header from "../../components/General/Header";
 import ContinueWith from "../../components/General/ContinueWith";
 import InputBox from "../../components/General/InputBox";
-import { useState } from "react";
+import useAuthProvider from "../../hooks/AuthProvider";
 
 function SignInForm() {
-	const [formData, setFormData] = useState({
-		email: "",
-		password: ""
-	})
+
+	const {handleLogin, loginFormData, setLoginFormData} = useAuthProvider()
 	return (
 		<div className="lg:col-start-2 row-start-1">
 			<form
 				action=''
+				onSubmit={handleLogin}
 				className='flex flex-col gap-5 border-1 border-gray-300 rounded-xl p-5'
 			>
 				<Header
@@ -23,8 +22,8 @@ function SignInForm() {
 					<InputBox
 						label='Email address'
 						type='email'
-						onInput={(e) => setFormData({...formData, email: e.currentTarget.value})}
-						value={formData.email}
+						onInput={(e) => setLoginFormData({...loginFormData, email: e.currentTarget.value})}
+						value={loginFormData.email}
 						placeholder='Enter your email'						
 					/>
 					<InputBox
@@ -32,8 +31,8 @@ function SignInForm() {
 						placeholder='Enter your password'
 						type='password'
 						icon={{ name: "EyeOff", is: true }}
-						value={formData.password}
-						onInput={(e) => setFormData({...formData, password: e.currentTarget.value})}
+						value={loginFormData.password}
+						onInput={(e) => setLoginFormData({...loginFormData, password: e.currentTarget.value})}
 					/>
 				</div>
 

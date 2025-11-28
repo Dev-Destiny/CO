@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Logo from "./General/Logo";
-import { footerLists } from "../main/lib/constants";
+import { footerLists } from "../lib/constants";
 
 function Footer() {
 	return (

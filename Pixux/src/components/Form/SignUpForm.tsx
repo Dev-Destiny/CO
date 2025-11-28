@@ -2,19 +2,13 @@ import Button from "../../components/General/Button";
 import Header from "../../components/General/Header";
 import ContinueWith from "../../components/General/ContinueWith";
 import InputBox from "../../components/General/InputBox";
-import { useState } from "react";
+import useAuthProvider from "../../hooks/AuthProvider";
 
 const SignUpForm = () => {
-	const [formData, setFormData] = useState({
-		firstName: "",
-		lastName: "",
-		email: "",
-		password: "",
-		confirmPassword: ""
-	})
+	const {signupFormData, setSignupFormData, handleSignup} = useAuthProvider()
 	return (
 		<div>
-			<form action=''>
+			<form action='' onSubmit={handleSignup}>
 				<Header
 					title='Join CO'
 					text='Start your interactive learning journey today'
@@ -26,8 +20,8 @@ const SignUpForm = () => {
 							label='First name'
 							placeholder='John'
 							type='text'
-							value={formData.firstName}
-							onInput={(e) => setFormData({...formData, firstName: e.currentTarget.value})}
+							value={signupFormData.firstName}
+							onInput={(e) => setSignupFormData({...signupFormData, firstName: e.currentTarget.value})}
 						/>
 					</div>
 					<div>
@@ -35,8 +29,8 @@ const SignUpForm = () => {
 							label='Last name'
 							placeholder='Doe'
 							type='text'
-							value={formData.lastName}
-							onInput={(e) => setFormData({...formData, lastName: e.currentTarget.value})}
+							value={signupFormData.lastName}
+							onInput={(e) => setSignupFormData({...signupFormData, lastName: e.currentTarget.value})}
 						/>
 					</div>
 					<div className='col-span-2'>
@@ -44,8 +38,8 @@ const SignUpForm = () => {
 							label='Email'
 							placeholder='john@example.com'
 							type='email'
-							value={formData.email}
-							onInput={(e) => setFormData({...formData, email: e.currentTarget.value})}
+							value={signupFormData.email}
+							onInput={(e) => setSignupFormData({...signupFormData, email: e.currentTarget.value})}
 						/>
 					</div>
 					<div className='col-span-2'>
@@ -54,8 +48,8 @@ const SignUpForm = () => {
 							placeholder='Create a strong password'
 							type='password'
 							icon={{ name: "EyeOff", is: true }}
-							value={formData.password}
-							onInput={(e) => setFormData({...formData, password: e.currentTarget.value})}
+							value={signupFormData.password}
+							onInput={(e) => setSignupFormData({...signupFormData, password: e.currentTarget.value})}
 						/>
 					</div>
 					<div className='col-span-2'>
@@ -64,8 +58,8 @@ const SignUpForm = () => {
 							placeholder='Confirm your password please'
 							type='password'
 							icon={{ name: "EyeOff", is: true }}
-							value={formData.confirmPassword}
-							onInput={(e) => setFormData({...formData, confirmPassword: e.currentTarget.value})}
+							value={signupFormData.confirmPassword}
+							onInput={(e) => setSignupFormData({...signupFormData, confirmPassword: e.currentTarget.value})}
 						/>
 					</div>
 				</div>

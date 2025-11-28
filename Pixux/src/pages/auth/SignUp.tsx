@@ -1,14 +1,14 @@
-import SignUpForm from "./components/SignUpForm";
-import Button from "../components/General/Button";
-import Logo from "../components/General/Logo";
-import SignUpContent from "./components/SignUpContent";
-import Footer from "../components/Footer";
+import SignUpForm from "../../components/Form/SignUpForm";
+import Button from "../../components/General/Button";
+import Logo from "../../components/General/Logo";
+import SignUpContent from "../../components/Form/SignUpContent";
+import Footer from "../../components/Footer";
 import { Link } from "react-router";
 
 const SignUp = () => {
 	return (
 		<div>
-			<div className='z-20 px-10 py-2 mb-[2rem] border-b-1 border-b-gray-300 fixed top-0 left-0 right-0 backdrop-blur-[20px] bg-[rgba(255,255,255,0.7)]'>
+			<div className='z-20 pad py-2 mb-[2rem] border-b-1 border-b-gray-300 fixed top-0 left-0 right-0 backdrop-blur-[20px] bg-[rgba(255,255,255,0.7)]'>
 				<div className='flex justify-between max-w-[1000px] mx-auto'>
 					<div className='flex font-bold items-center gap-1'>
 						<Logo />
@@ -19,14 +19,14 @@ const SignUp = () => {
 						<p className='text-[12px] text-gray-500'>
 							Already have an account?
 						</p>
-						<Link to={"/signin"}>
+						<Link to={"/auth"}>
 							<Button type='ghost'>Sign In</Button>
 						</Link>
 					</div>
 				</div>
 			</div>
 
-			<div className='grid lg:grid-cols-2 grid-cols-1 pt-20 px-10 max-w-[1000px] mx-auto gap-10'>
+			<div className='grid lg:grid-cols-2 grid-cols-1 pt-20 pad max-w-[1000px] mx-auto gap-10'>
 				<SignUpForm />
 				<SignUpContent />
 			</div>

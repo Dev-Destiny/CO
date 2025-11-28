@@ -1,4 +1,4 @@
-import { courseCards } from "../../main/lib/constants";
+import { courseCards } from "../../lib/constants";
 import Button from "../General/Button";
 import Header from "../General/Header";
 import CourseCard from "./CourseCard";

@@ -1,4 +1,4 @@
-import { features } from "../../main/lib/constants";
+import { features } from "../../lib/constants";
 import Header from "../General/Header";
 import Stats from "../General/Stats";
 // import FeatureCard from "./FeatureCard";
@@ -23,8 +23,8 @@ const FeaturesSect = () => {
 
 						<div className='bg-white p-7  rounded-2xl group hover:shadow-[0_10px_10px_rgba(150,150,150,0.2)] duration-300' key={index}>
 							<div className='flex flex-col gap-2'>
-								{<div className='w-fit p-3 bg-blue-100 rounded-xl group-hover:bg-blue-600 duration-300'>
-									<feature.icon className='text-blue-600 group-hover:text-white duration-300'/>
+								{<div className='w-fit p-3 bg-blue-100 rounded-xl group-hover:bg-blue-600 group-active:bg-blue-600 duration-300'>
+									<feature.icon className='text-blue-600 group-hover:text-white group-active:text-white duration-300'/>
 								</div>}
 								<h2 className='text-[1.3rem] font-semibold'>{ feature.head }</h2>
 								<p className='text-gray-500'>{ feature.text }</p>

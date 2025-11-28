@@ -1,4 +1,4 @@
-import { testimonials } from "../../main/lib/constants";
+import { testimonials } from "../../lib/constants"; 
 import Header from "../General/Header";
 import TestimonialCard from "./TestimonialCard";
 

@@ -1,4 +1,4 @@
-import { pathSectSteps } from "../../main/lib/constants";
+import { pathSectSteps } from "../../lib/constants";
 import Header from "../General/Header";
 import Steps from "./Steps";
 

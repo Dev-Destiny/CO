@@ -31,7 +31,7 @@ function Navbar() {
 				<div className='flex gap-2 items-center'>
 					{/* <img src="Search-icon.svg" alt="" /> */}
 					<div className='hidden sm:flex'>
-						<Link to={"/signin"}>
+						<Link to={"/auth"}>
 							<Button size='fit' type={"ghost"} >Sign in</Button>
 						</Link>
 					</div>

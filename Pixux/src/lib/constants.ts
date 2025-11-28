@@ -1,5 +1,6 @@
 import { Brain, Code, MessageCircle, Trophy, Users, Zap } from "lucide-react";
-import type { StepProps } from "../../components/Path/Steps";
+import type { StepProps } from "../components/Path/Steps";
+
 
 export const courseCards = [
 	{

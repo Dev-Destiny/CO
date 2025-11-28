@@ -31,7 +31,7 @@ const CourseCard = ({
 				<img
 					src={img}
 					alt=''
-					className='absolute object-cover z-0 group-hover:scale-110 transition-all duration-400'
+					className='absolute object-cover z-0 group-hover:scale-110 group-active:scale-110  transition-all duration-400'
 				/>
 			</div>
 
