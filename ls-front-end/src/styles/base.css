@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+@theme {
+	/* Primary Brand Colors */
+	--color-primary: #10d38f; /* Emerald Mint */
+	--color-primary-light: #4be8af;
+	--color-primary-dark: #0a9f6c;
+
+	/* Secondary Accent Colors */
+	--color-accent: #ff6f3c; /* Vibrant Coral Orange */
+	--color-accent-light: #ff8f66;
+	--color-accent-dark: #cc5128;
+
+	--color-secondary: #9b5de5; /* Electric Violet */
+	--color-secondary-light: #b985f1;
+	--color-secondary-dark: #7a3bc0;
+
+	/* Neutrals */
+	--color-bg: #0e0f12;
+	--color-bg-light: #15171c;
+	--color-surface: #20242b;
+	--color-border: #30363d;
+
+	--color-text: #e5e7eb;
+	--color-text-muted: #9ca3af;
+
+	/* Extras */
+	--color-landing-soft-mint: #f3fcf8;
+	--color-landing-soft-grey: #f5f4f2;
+	--color-landing-soft-lavender: #faf7ff;
+	--color-landing-soft-coral: #fff8f5;
+	--color-landing-soft-neutral: #fafaf9;
+
+	--color-btn-primary: #ff6f3c; /* 10d38f */
+	--color-btn-primary-hover: #cc5128; /* 0a9f6c */
+	--color-btn-primary-active: #087d56;
+	--color-btn-text: #ffffff;
+	/* Fonts */
+	--font-heading: "Inter Tight", "Sofia Sans", sans-serif;
+	--font-body: "Inter", sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+
+	/* Font Size */
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+	--text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+    --text-8xl: 6rem;
+
+	--leading-tight: 1.15;
+	--leading-normal: 1.4;
+	--leading-relaxed: 1.6;
+}

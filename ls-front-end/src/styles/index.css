@@ -1,0 +1,43 @@
+@import './base.css';
+@import "tailwindcss";
+
+body {
+	background-color: #ffff;
+	@apply font-body text-base text-text bg-bg
+}
+
+.container {
+	/* max-width: 80vw; */
+	@apply lg:max-w-[80vw] mx-auto
+	/* margin-inline: auto; */
+}
+
+.pad {
+	@apply px-5
+}
+
+
+li {
+	cursor: pointer;
+}
+
+li::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	scale: 0 1;
+	background-color: #5277f1;
+	transform-origin: left;
+	transition: all 0.2s ease-in-out;
+}
+
+li:hover::after {
+	scale: 1 1;
+}
+
+li:hover {
+	color: black;
+}
